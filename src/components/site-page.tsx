@@ -182,6 +182,27 @@ function LionessMark() {
   );
 }
 
+function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="size-5" fill="none" aria-hidden="true">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" strokeWidth="1.7" />
+      <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.7" />
+      <circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" />
+    </svg>
+  );
+}
+
+function TikTokIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="size-5" fill="currentColor" aria-hidden="true">
+      <path d="M14.2 3c.4 2.3 1.7 4 4 4.3v2.4a6.4 6.4 0 0 1-3.7-1.2v6.4c0 3.1-2.4 5.6-5.5 5.6A5.4 5.4 0 0 1 3.5 15c0-3 2.4-5.5 5.4-5.5.3 0 .7 0 1 .1v2.6a2.7 2.7 0 0 0-1-.2c-1.6 0-2.9 1.3-2.9 3s1.3 3 2.9 3 2.9-1.3 2.9-3.1V3h2.4Z" />
+    </svg>
+  );
+}
+
+const INSTAGRAM = "https://www.instagram.com/rajae_lemsaf";
+const TIKTOK = "https://www.tiktok.com/@rajaelemssaaf";
+
 export function SitePage() {
   const [menu, setMenu] = useState(false);
   const [legal, setLegal] = useState<"aviso" | "privacidad" | null>(null);
@@ -728,6 +749,35 @@ export function SitePage() {
           Rajae Lemssaaf Echchoayby · Abogada · Derecho Administrativo
         </p>
         <p className="mt-1 text-sm text-muted">Lunes a viernes, de 10:00 a 18:00 h</p>
+        <div className="mt-5 flex items-center justify-center gap-3">
+          <a
+            className="grid size-11 place-items-center rounded-full border border-line text-ink"
+            href={INSTAGRAM}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+          >
+            <InstagramIcon />
+          </a>
+          <a
+            className="grid size-11 place-items-center rounded-full border border-line text-ink"
+            href={TIKTOK}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="TikTok"
+          >
+            <TikTokIcon />
+          </a>
+          <a
+            className="grid size-11 place-items-center rounded-full border border-line text-ink"
+            href={waLink("Hola, Rajae. Quiero información sobre una consulta.")}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="WhatsApp"
+          >
+            <MessageCircle className="size-5" />
+          </a>
+        </div>
         <p className="mx-auto mt-5 max-w-xl text-sm leading-relaxed text-muted">
           La información de esta web es de carácter general y no constituye asesoramiento jurídico.
           Cada caso requiere un estudio individualizado.
