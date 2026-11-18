@@ -25,6 +25,24 @@ export const topics: Topic[] = [
     ],
   },
   {
+    slug: "cita-mexico",
+    title: "Reservar cita · asuntos en México",
+    lead: "Cita para trámites con vínculo en México, coordinada con socios en ese país.",
+    body: [
+      "Si tu asunto debe verse en México o desde España con efectos en México, reservo la cita y la coordino con mis socios allí. No publico sus nombres ni su dirección en esta página: te los confirmo al reservar.",
+      "También puedes empezar por la consulta en Murcia, Lorca, Cartagena u online. La consulta jurídica inicial es de 99 €, IVA no incluido.",
+    ],
+  },
+  {
+    slug: "cita-brasil",
+    title: "Reservar cita · asuntos en Brasil",
+    lead: "Cita para trámites con vínculo en Brasil, coordinada con socios en ese país.",
+    body: [
+      "Si tu asunto debe verse en Brasil o desde España con efectos en Brasil, reservo la cita y la coordino con mis socios allí. No publico sus nombres ni su dirección en esta página: te los confirmo al reservar.",
+      "También puedes empezar por la consulta en Murcia, Lorca, Cartagena u online. La consulta jurídica inicial es de 99 €, IVA no incluido.",
+    ],
+  },
+  {
     slug: "cita-extranjeria",
     title: "Cita de extranjería",
     lead: "Una cita para cualquier asunto de extranjería: residencia, renovación, arraigo, reagrupación o recursos.",
@@ -76,15 +94,6 @@ export const topics: Topic[] = [
     body: [
       "La residencia no lucrativa no autoriza a trabajar. El visado de nómada digital es para quien teletrabaja para empresas o clientes de fuera. La autorización de profesional altamente cualificado (PAC) es para un contrato cualificado con empresa en España.",
       "Los medios económicos y la experiencia cambian con la norma. Los reviso con tu documentación en la consulta, sin dar por válida una cifra genérica.",
-    ],
-  },
-  {
-    slug: "empleo",
-    title: "¿Buscas empleo?",
-    lead: "No gestiono una bolsa de empleo ni inscribo currículums.",
-    body: [
-      "Sí puedo revisar qué autorización necesitas para trabajar legalmente en España y si tu situación actual te lo permite.",
-      "Si eso es lo que buscas, reserva la consulta y cuéntame tu caso.",
     ],
   },
   {
