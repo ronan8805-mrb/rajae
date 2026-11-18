@@ -472,8 +472,8 @@ export function SitePage() {
                   <p className="text-xs tracking-widest text-gold uppercase">Pago de demostración</p>
                   <h3 className="mt-3 font-display text-3xl text-ink">Consulta reservada</h3>
                   <p className="mt-3 text-base leading-relaxed text-muted">
-                    El pago de 99 € figura como completado. Es una demo: no se ha realizado ningún
-                    cargo. Confirma día y hora por WhatsApp o con el formulario.
+                    El pago de 99 € figura como completado. Es una demostración: no se ha realizado
+                    ningún cargo. Confirma día y hora por WhatsApp o con el formulario.
                   </p>
                   <p className="mt-4 font-display text-xl text-gold">Ref. DEMO-99</p>
                 </div>
@@ -569,7 +569,7 @@ export function SitePage() {
             <h3 className="text-center font-display text-2xl text-gold">Cómo funciona la reserva</h3>
             <ol className="mt-5 space-y-4 text-base leading-relaxed text-ink">
               <li>1. Pulsa «Pagar 99 € y solicitar cita» e introduce los datos de la tarjeta.</li>
-              <li>2. Pulsa CONNECT STRIPE. En esta demo el pago queda registrado al momento.</li>
+              <li>2. Pulsa CONNECT STRIPE. En esta demostración el pago queda registrado al momento.</li>
               <li>
                 3. Confirma día y hora por WhatsApp o con el formulario. No se atienden consultas
                 sin el pago realizado previamente.
