@@ -97,6 +97,7 @@ const NAV = [
   { href: "#opiniones", label: "Opiniones" },
   { href: "#consulta", label: "Consulta" },
   { href: "#contacto", label: "Contacto" },
+  { href: "/enlaces", label: "Enlaces" },
 ] as const;
 
 type FormState = {
