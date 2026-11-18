@@ -149,19 +149,34 @@ function Stars() {
   );
 }
 
-function LeoMark() {
+function LionessMark() {
   return (
     <div className="flex flex-col items-center gap-3 text-gold" aria-hidden="true">
       <Crown className="size-8" strokeWidth={1.25} />
-      <svg viewBox="0 0 64 64" className="h-14 w-14">
+      <svg viewBox="0 0 88 64" className="h-12 w-16" fill="none" aria-hidden="true">
         <path
-          d="M18 46c0-10 6-14 14-14 4 0 7 2 8 5 2-8 8-14 16-16-2 10-2 18-8 24-6 6-16 8-24 6-6-2-6-3-6-5z"
-          fill="none"
+          d="M22 26 L15 8 L33 22"
           stroke="currentColor"
-          strokeWidth="2.2"
+          strokeWidth="1.7"
           strokeLinecap="round"
+          strokeLinejoin="round"
         />
-        <circle cx="20" cy="28" r="7" fill="none" stroke="currentColor" strokeWidth="2.2" />
+        <path
+          d="M34 20 L40 6 L52 18"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M18 46c-2-14 8-24 22-24 8 0 14 5 16 12h22c4 0 6 4 4 8H56c-2 10-10 16-22 16-12 0-18-6-16-12z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle cx="42" cy="34" r="1.5" fill="currentColor" />
+        <path d="M74 36v4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
       </svg>
     </div>
   );
@@ -328,7 +343,7 @@ export function SitePage() {
               />
             </figure>
             <div className="flex flex-col items-center text-center">
-              <LeoMark />
+              <LionessMark />
               <h1 className="mt-6 text-4xl leading-none font-medium text-gold sm:text-5xl">
                 <span className="hover-title">RAJAE</span>
                 <span className="hover-title mt-2 block">LEMSSAAF</span>
