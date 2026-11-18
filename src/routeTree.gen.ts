@@ -10,17 +10,11 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as EnlacesRouteImport } from './routes/enlaces'
 import { Route as TemasSlugRouteImport } from './routes/temas/$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EnlacesRoute = EnlacesRouteImport.update({
-  id: '/enlaces',
-  path: '/enlaces',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TemasSlugRoute = TemasSlugRouteImport.update({
@@ -31,31 +25,27 @@ const TemasSlugRoute = TemasSlugRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/enlaces': typeof EnlacesRoute
   '/temas/$slug': typeof TemasSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/enlaces': typeof EnlacesRoute
   '/temas/$slug': typeof TemasSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/enlaces': typeof EnlacesRoute
   '/temas/$slug': typeof TemasSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/enlaces' | '/temas/$slug'
+  fullPaths: '/' | '/temas/$slug'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/enlaces' | '/temas/$slug'
-  id: '__root__' | '/' | '/enlaces' | '/temas/$slug'
+  to: '/' | '/temas/$slug'
+  id: '__root__' | '/' | '/temas/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  EnlacesRoute: typeof EnlacesRoute
   TemasSlugRoute: typeof TemasSlugRoute
 }
 
@@ -66,13 +56,6 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/enlaces': {
-      id: '/enlaces'
-      path: '/enlaces'
-      fullPath: '/enlaces'
-      preLoaderRoute: typeof EnlacesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/temas/$slug': {
@@ -87,7 +70,6 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  EnlacesRoute: EnlacesRoute,
   TemasSlugRoute: TemasSlugRoute,
 }
 export const routeTree = rootRouteImport

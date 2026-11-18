@@ -25,8 +25,8 @@ function TopicPage() {
     return (
       <main className="shell py-16 text-center">
         <h1 className="font-display text-4xl text-gold">Página no encontrada</h1>
-        <Link to="/enlaces" className="btn-gold mx-auto mt-8 max-w-xs">
-          Volver a enlaces
+        <Link to="/" className="btn-gold mx-auto mt-8 max-w-xs">
+          Volver al inicio
         </Link>
       </main>
     );
@@ -39,8 +39,8 @@ function TopicPage() {
   return (
     <main className="min-h-screen overflow-x-clip bg-paper text-ink">
       <article className="shell max-w-2xl py-10">
-        <Link to="/enlaces" className="text-sm tracking-widest text-gold-deep uppercase no-underline">
-          ← Enlaces
+        <Link to="/" className="text-sm tracking-widest text-gold-deep uppercase no-underline">
+          ← Inicio
         </Link>
         <p className="mt-6 text-xs tracking-widest text-gold uppercase">Lemssaaf Abogados</p>
         <h1 className="mt-3 font-display text-4xl leading-tight text-ink sm:text-5xl">{topic.title}</h1>
