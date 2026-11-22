@@ -57,6 +57,45 @@ const AREAS = [
   },
 ] as const;
 
+const INTERNACIONAL = [
+  {
+    href: "/temas/arabia-saudi",
+    flag: "🇸🇦",
+    country: "Arabia Saudí",
+    text: "Constitución de empresas, inversión, visados Umrah y litigación.",
+  },
+  {
+    href: "/temas/egipto",
+    flag: "🇪🇬",
+    country: "Egipto",
+    text: "Constitución de empresas, inversión, extranjería y litigación.",
+  },
+  {
+    href: "/temas/qatar",
+    flag: "🇶🇦",
+    country: "Qatar",
+    text: "Negocios internacionales, inversión, extranjería y litigación.",
+  },
+  {
+    href: "/temas/brasil",
+    flag: "🇧🇷",
+    country: "Brasil",
+    text: "Negocios, inversión, extranjería y litigación.",
+  },
+  {
+    href: "/temas/mexico",
+    flag: "🇲🇽",
+    country: "México",
+    text: "Negocios, inversión, extranjería y litigación.",
+  },
+  {
+    href: "/temas/espana",
+    flag: "🇪🇸",
+    country: "España",
+    text: "Asesoramiento jurídico integral, extranjería, inversión y litigación.",
+  },
+] as const;
+
 const STEPS = [
   {
     title: "Consulta inicial",
@@ -92,6 +131,7 @@ const OPINIONS = [
 
 const NAV = [
   { href: "#especializacion", label: "Especialización" },
+  { href: "#internacional", label: "Internacional" },
   { href: "#metodo", label: "Cómo trabajo" },
   { href: "#sobre-mi", label: "Sobre mí" },
   { href: "#opiniones", label: "Opiniones" },
@@ -413,6 +453,28 @@ export function SitePage() {
           <p className="quote mx-auto mt-14 max-w-md text-center text-4xl text-gold sm:text-5xl">
             Tu tranquilidad, mi compromiso.
           </p>
+        </section>
+
+        <section id="internacional" className="shell scroll-mt-24 py-12 sm:py-16">
+          <h2 className="hover-title text-center font-display text-3xl text-gold sm:text-4xl">
+            SERVICIOS JURÍDICOS INTERNACIONALES
+          </h2>
+          <Ornament />
+          <div className="mx-auto mt-6 max-w-3xl">
+            {INTERNACIONAL.map((item) => (
+              <a key={item.country} href={item.href} className="service no-underline">
+                <span className="mt-1 text-3xl leading-none" aria-hidden="true">
+                  {item.flag}
+                </span>
+                <div className="min-w-0">
+                  <h3 className="hover-title font-display text-xl tracking-wide text-ink uppercase sm:text-2xl">
+                    {item.country}
+                  </h3>
+                  <p className="mt-2 text-base leading-relaxed text-muted">{item.text}</p>
+                </div>
+              </a>
+            ))}
+          </div>
         </section>
 
         <section id="metodo" className="scroll-mt-24 border-y border-line bg-ivory/70 py-14">

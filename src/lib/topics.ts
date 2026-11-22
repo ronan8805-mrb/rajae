@@ -7,6 +7,63 @@ export type Topic = {
 
 export const topics: Topic[] = [
   {
+    slug: "arabia-saudi",
+    title: "Arabia Saudí",
+    lead: "Constitución de empresas, inversión, visados Umrah y litigación.",
+    body: [
+      "Constituyo sociedades en Yeda y en Riad, y reviso la inversión extranjera antes de comprometer capital. También tramito el visado Umrah a Arabia Saudí.",
+      "Si hay una disputa de comercio exterior con Arabia Saudí, estudio el contrato, la vía de reclamación y si el asunto se litiga allí o desde España, con los socios locales cuando hace falta.",
+      "La consulta inicial es de 99 €, IVA no incluido. El encargo se presupuesta antes de empezar.",
+    ],
+  },
+  {
+    slug: "egipto",
+    title: "Egipto",
+    lead: "Constitución de empresas, inversión, extranjería y litigación.",
+    body: [
+      "Constituyo empresas en El Cairo y oriento la inversión y los trámites de extranjería ligados a esa actividad.",
+      "También llevo disputas de comercio exterior con Egipto: contrato, impago o incumplimiento, y la estrategia para reclamar allí o desde España.",
+      "La consulta inicial es de 99 €, IVA no incluido.",
+    ],
+  },
+  {
+    slug: "qatar",
+    title: "Qatar",
+    lead: "Negocios internacionales, inversión, extranjería y litigación.",
+    body: [
+      "Asesoro negocios e inversión con Qatar, y los trámites de extranjería que acompañan a esa actividad.",
+      "Si la disputa es de comercio exterior, reviso el contrato y la vía para litigar, en Qatar o desde España, según convenga al caso.",
+      "La consulta inicial es de 99 €, IVA no incluido.",
+    ],
+  },
+  {
+    slug: "brasil",
+    title: "Brasil",
+    lead: "Negocios, inversión, extranjería y litigación.",
+    body: [
+      "Coordino los asuntos de Brasil con socios en el país: negocios, inversión, extranjería y litigación. Sus nombres y su dirección se confirman al reservar, no en esta página.",
+      "La consulta puede empezar en Murcia, Lorca, Cartagena u online. Cuesta 99 €, IVA no incluido.",
+    ],
+  },
+  {
+    slug: "mexico",
+    title: "México",
+    lead: "Negocios, inversión, extranjería y litigación.",
+    body: [
+      "Coordino los asuntos de México con socios en el país: negocios, inversión, extranjería y litigación. Sus nombres y su dirección se confirman al reservar, no en esta página.",
+      "La consulta puede empezar en Murcia, Lorca, Cartagena u online. Cuesta 99 €, IVA no incluido.",
+    ],
+  },
+  {
+    slug: "espana",
+    title: "España",
+    lead: "Asesoramiento jurídico integral, extranjería, inversión y litigación.",
+    body: [
+      "En España llevo derecho administrativo, extranjería, inversión y la defensa del asunto cuando hay que recurrir o litigar.",
+      "La primera consulta es de 99 €, IVA no incluido. Presencial en Murcia, Lorca y Cartagena, u online.",
+    ],
+  },
+  {
     slug: "razones-humanitarias",
     title: "Modificar razones humanitarias",
     lead: "Revisión de la autorización de residencia por razones humanitarias y de su posible modificación.",
