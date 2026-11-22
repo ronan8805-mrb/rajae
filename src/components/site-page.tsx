@@ -460,7 +460,36 @@ export function SitePage() {
             SERVICIOS JURÍDICOS INTERNACIONALES
           </h2>
           <Ornament />
-          <div className="mx-auto mt-6 max-w-3xl">
+          <div className="mx-auto max-w-2xl text-center">
+            <p className="font-display text-3xl leading-tight text-ink sm:text-4xl">
+              Tu proyecto no tiene fronteras. Tu abogado tampoco.
+            </p>
+            <p className="mt-6 text-base leading-relaxed text-ink">
+              Del Golfo a Latinoamérica, abrimos puertas legales allí donde tus planes te lleven. Con
+              nuestra red de despachos colaboradores en Arabia Saudí, Egipto, Qatar, Brasil, México y
+              España, tienes abogados locales en cada país y un solo equipo que lo coordina todo.
+            </p>
+            <p className="mt-4 text-base leading-relaxed text-ink">
+              Invertir, crear tu empresa, resolver un trámite de extranjería o defender tus intereses
+              ante un tribunal: tú hablas con nosotros, y nosotros movemos todas las piezas.
+            </p>
+          </div>
+          <div className="card mx-auto mt-8 max-w-xl px-6 py-7 text-left">
+            <h3 className="text-center font-display text-2xl text-gold">Lo que ganas con nuestra red</h3>
+            <ul className="mt-5 space-y-3 text-base leading-relaxed text-ink">
+              <li>Un único interlocutor, en tu idioma.</li>
+              <li>Abogados locales que conocen el terreno que pisas.</li>
+              <li>Del primer paso a la sentencia: asesoramiento integral.</li>
+              <li>Rapidez y confianza para decidir sin sorpresas.</li>
+            </ul>
+          </div>
+          <div className="mx-auto mt-8 max-w-md text-center">
+            <p className="font-display text-2xl text-ink">¿Listo para dar el salto internacional?</p>
+            <a href="#consulta" className="btn-gold mx-auto mt-5">
+              Reserva tu primera consulta
+            </a>
+          </div>
+          <div className="mx-auto mt-10 max-w-3xl">
             {INTERNACIONAL.map((item) => (
               <a key={item.country} href={item.href} className="service no-underline">
                 <span className="mt-1 text-3xl leading-none" aria-hidden="true">
